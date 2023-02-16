@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+nav{
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 120px;
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+}
+a.logo{
+    color: #192a56;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: 'Spline Sans Mono';
+    letter-spacing: 1px;
+}    
+@font-face {
+    font-family: "Spline Sans Mono";
+    src: url("krinkes/KrinkesDecorPERSONAL.ttf");
+}
+a.logo .fa-solid{
+    color: #27ae60;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: #666;
+    font-size: 1.2rem;
+    margin-left: 16px;
+    text-transform: uppercase;
+    position: relative;
+}
+ul li a::before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.7s ease-in;
+    -webkit-transition: 0.7s ease-in;
+    -moz-transition: 0.7s ease-in;
+    -ms-transition: 0.7s ease-in;
+    -o-transition: 0.7s ease-in;
+}
+
+nav ul li a:hover::before {
+    width: 70%;
+    transform: translateX(30%);
+    -webkit-transform: translateX(30%);
+    -moz-transform: translateX(30%);
+    -ms-transform: translateX(30%);
+    -o-transform: translateX(30%);
+}
+
+
+a.active,a:hover{
+    color: #27ae60;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+}
+.active{
+    color: #27ae60;
+}
+
+
+.btn__table{
+   padding-top: 15px;
+}
+.btn-reser{
+    background-color: #27ae60;
+    color: #fff;
+    transition: 0.7s ease-in;
+    -webkit-transition: 0.7s ease-in;
+    -moz-transition: 0.7s ease-in;
+    -ms-transition: 0.7s ease-in;
+    -o-transition: 0.7s ease-in;
+    font-size: 1.2rem;
+    font-weight: 100;
+    border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -ms-border-radius: .1rem;
+    -o-border-radius: .1rem;
+    padding: 8px 22px;
+}
+.btn-reser:hover{
+    border: none;
+    background: #192a56;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #192a56;
+    float: right;
+    cursor: pointer;
+    display: none;
+    transition: .7s ease-in;
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    -ms-transition: .7s ease-in;
+    -o-transition: .7s ease-in;
+}
+#check{
+    display: none;
+}
+
+.show {
+    left: -100%;
+}
+  
+  
+
+@media (max-width: 1040px){
+    .checkbtn{
+      display: block;
+    }
+    nav{
+        padding: 10px 20px;
+    }
+    nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      color: #fff;
+      font-weight: 700;
+      background: #fff;
+      top: 88px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s ease-in;
+      -webkit-transition: all .5s ease-in;
+      -moz-transition: all .5s ease-in;
+      -ms-transition: all .5s ease-in;
+      -o-transition: all .5s ease-in;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+    }
+    nav ul li a{
+        color: #192a56;
+        margin: 16px 0;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #27ae60;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    #check:checked ~ .checkbtn{
+        color: #000;
+    }
+}

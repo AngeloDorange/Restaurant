@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitian Kitchen</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner">
+            <img src="img/loader.gif" alt="">
+        </div>
+    </div>
+      
+    <!---------------------------NAVIGATION----------------------------------->
+    <nav>
+        <input type="checkbox" id="check">
+
+
+        <a class="logo"><i class="fa-solid fa-utensils"></i>Ragazza</a>
+
+        <ul class="navigation">
+          <li><a class="nav-link" href="#banner">Home</a></li>
+          <li><a class="nav-link" href="#story">Story</a></li>
+          <li><a class="nav-link" href="#menu">Menu</a></li>
+          <li><a class="nav-link" href="#news">Our Updates</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        
+        <div class="btn__table">
+            <button onclick="show()" type="button" class="btn-reser">Reservation</button>
+        </div>
+
+        <label for="check" class="checkbtn">
+            <i class="uil uil-bars"></i>
+        </label>
+    </nav>
+    <!----------------------------HERO BANNER--------------------------------->
+    <section id="banner" class="banner">
+        <div id="slider">
+            <img class="imgSlider" src="img/slide-1.jpg" alt="Image 1">
+            <img class="imgSlider" src="img/slide-2.jpg" alt="Image 2">
+            <img class="imgSlider" src="img/slide-3.jpg" alt="Image 3">
+            <img class="imgSlider" src="img/slide-4.jpg" alt="Image 4">
+            <img class="imgSlider" src="img/slide-5.jpg" alt="Image 5">
+            <img class="imgSlider" src="img/about-1.jpg" alt="Image 6">
+        </div>
+        <div class="content">
+
+            <div class="text-content">
+                <h1>Delicious <br> Akassan</h1>
+                <p><strong>4/5</strong> <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span></p>
+                <p>From <strong>1,500+</strong> Customers Reviews</p>
+            </div>
+
+            <div class="img-text">
+                <!--<img src="IMG/hero.jpg" alt="">-->
+                <video autoplay muted loop>
+                    <source src="video/production_ID_3769033.mp4" type="video/mp4">
+                </video>
+                <div class="text">
+                    <p><strong>Akassan Ayisyen</strong></p>
+                    <p><strong>4/5</strong> <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-----------------------STORY----------------------------------------->
+    <section class="story" id="story">
+        <div class="content">
+            <div class="title">
+                <h1>Why Choose Us</h1>
+            </div>
+
+            <div class="cards">
+                <div class="left" data-aos="fade-up" data-aos-delay="50">
+                    <img class="image1" src="img/about-img.png" alt="">
+                </div>
+
+                <div class="right" data-aos="fade-up" data-aos-delay="70">
+                    <h1>Best Italian Food In The USA</h1>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Dolore, Sequi Corrupti Corporis Quaerat Voluptatem Ipsam Neque Labore Modi Autem, Saepe Numquam Quod Reprehenderit Rem? Tempora Aut Soluta Odio Corporis Nihil!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, aspernatur ipsum commodi odio accusamus provident deserunt culpa eius, mollitia nisi iste harum delectus. Vitae dolorum blanditiis nesciunt, labore doloremque animi quo commodi repellendus fugit alias reprehenderit atque? Ratione soluta quam, saepe dolorum aliquam doloremque ea illum fugiat consectetur perferendis alias!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-----------------------MENU----------------------------------------->
+    <section id="menu" class="menu">
+        <div class="content">
+            <div class="row">
+
+                <div class="title">
+                    <h1>Special Menu</h1>
+                </div>
+
+                <div class="content__menu">
+                    <div class="items">
+
+                        <div class="item" data-aos="fade-up" data-aos-delay="40">
+                            <img src="img/d1.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Dinner</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Banana and Chicken</h2>
+                                    <!--<p><strong>$30</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <strong>4.3/5</strong>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p>200 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-aos="fade-up" data-aos-delay="60">
+                            <img src="img/d2.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Lunch</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Salad Banana</h2>
+                                    <!--<p><strong>$22</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <strong>4/5</strong>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p>200 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item" data-aos="fade-up" data-aos-delay="80">
+                            <img src="IMG/din.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Breakfast</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Morning Fresh</h2>
+                                    <!--<p><strong>$15</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <strong>3/5</strong>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p>340 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item bottom" data-aos="fade-up" data-aos-delay="40">
+                            <img src="img/din.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Breakfast</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Egg and Chicken</h2>
+                                    <!--<p><strong>$25</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <strong>5/5</strong>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <p>700 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item bottom" data-aos="fade-up" data-aos-delay="60">
+                            <img src="img/d2.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Dinner</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Big Fish</h2>
+                                   <!-- <p><strong>$50</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <strong>4.3/5</strong>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                    <p>500 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="item bottom" data-aos="fade-up" data-aos-delay="80">
+                            <img src="img/d1.jpg" alt="">
+                            <div class="over">
+                                <a href="#">Lunch</a>
+                            </div>
+                            <div class="item-body">
+                                <div class="title">
+                                    <h2>Banana Celeri</h2>
+                                    <!--<p><strong>$18</strong></p>-->
+                                </div>
+                                <div class="value">
+                                    <p><strong>4/5</strong></p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p>900 Reviews</p>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!--***********************************************************************-->
+    <section class="reservation" id="book">
+        <div class="container">
+            <form class="form" action="#" method="post" name="myForm">
+                <div class="title">
+                    <h1>Free and Fast</h1>
+                </div>
+                
+                <div class="mail">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Your email">
+                </div>
+                
+                <div class="mail">
+                    <input type="tel" name="number" id="" placeholder="Phone number" required>
+                    <input type="number" name="name" id="" placeholder="Number of person" required>
+                </div>
+                
+                <div class="mail">
+                    <input type="time" name="time" >
+                    <input type="date" name="date" id="">
+                </div>
+                <textarea name="" id=""  rows="10" placeholder="What can we do for you please ?"></textarea>
+                <div class="row__btn">
+                 <button onclick="" type="submit">Send Request</button>
+                 <button class="btn" onclick="hide()"><i class="uil uil-multiply"></i></button>
+                </div>
+            </form>
+                
+        </div>
+    </section>
+    <!--***********************************************************************-->
+
+
+    <!-----------------------ILLUSTRATION---------------------------------->
+    <section id="image" class="image">
+        <div class="contain"></div>
+    </section>
+
+    <!---------------------------BLOG------------------------------------->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="title">
+                <h1>News and Events</h1>
+            </div>
+            
+            <div class="events">
+                <div class="event1">
+                    <div class="item" data-aos="fade-up" data-aos-delay="40">
+                        <a href="#"><img src="img/1.jpg" alt=""></a>
+                        <div class="event-text">
+                            <a href="#">Featured</a>
+                            <p>Healthy lifestyle and Happy living Tips</p>
+                        </div>
+                    </div>
+                    <div class="item" data-aos="fade-up" data-aos-delay="60">
+                        <a href="#"><img src="img/2.jpg" alt=""></a>
+                        <div class="event-text">
+                            <a href="#">Featured</a>
+                            <p>How to make a Healthy milk</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="event2">
+    
+                    <div class="item" data-aos="fade-up" data-aos-delay="40">
+                        <a href="#"><img src="img/3.jpg" alt=""></a>
+                        <div class="body">
+                            <h3>Promotions</h3>
+                            <small>20 May 2022</small>
+                        </div>
+                        <p>Is coconut good for you ?</p>
+                    </div>
+    
+                    <div class="item" data-aos="fade-up" data-aos-delay="60">
+                        <a href="#"><img src="img/4.jpg" alt=""></a>
+                        <div class="body">
+                            <h3 class="black">News</h3>
+                            <small>20 June 2022</small>
+                        </div>
+                        <p>Salmon Steak Noddle</p>
+                    </div>
+    
+                    <div class="item" data-aos="fade-up" data-aos-delay="80">
+                        <a href="#"><img src="img/5.jpg" alt=""></a>
+                        <div class="body">
+                            <h3>Meeting</h3>
+                            <small>10 August 2022</small>
+                        </div>
+                 
+                       <p>Making a healthy salad</p>
+                    </div>   
+                </div> 
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!------------------------------FOOTER-------------------------------------------->
+    <footer id="contact">
+        <div class="container">
+
+            <div class="title">
+                <h2 class="logo"><i class="fa-solid fa-utensils"></i>Ragazza</h2>
+            </div>
+
+            <div class="cols">
+
+                <div class="col1" data-aos="fade-down" data-aos-delay="50">
+                    <div class="title">
+                        <h2>Location</h2>
+
+                        <ul class="gps">
+                            <li><p>122, Karl Marx, MIAMI NORTH 10729, <br> UNITED STATES</p></li>
+                            <a class="direction" target="_blank" href="https://goo.gl/maps/wZVGLA7q64uC1s886">Direction <i class="fa-solid fa-diamond-turn-right"></i></a>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="col2" data-aos="fade-down" data-aos-delay="70">
+                    <div class="title">
+                        <h2>Opening Hours</h2>
+                    </div>
+                    <div class="content">
+                        <p>Monday - Friday</p>
+                        <p>10:00 AM - 08:00 PM</p>
+                        <p>Tel: 033-04-0570</p>
+                    </div>
+                </div>
+
+                <div class="col3" data-aos="fade-down" data-aos-delay="90">
+                    <div class="title">
+                        <h2>Social</h2>
+                    </div>
+
+                    <ul class="social">
+                        <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                        <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                        <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+                    </ul>
+
+                    <p>Copyright &copy; 2022-<span id="year"></span>| Ragazza Co, Ltd. <br> Designed by: <a href="#">Creative Web</a></p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="anim.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
